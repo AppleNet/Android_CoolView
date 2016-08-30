@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#87CEFF"
+        android:textSize="20sp"
+        android:gravity="center" />
+	<ListView 
+	    android:id="@+id/show_data_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="gone"/>
+	<ViewStub 
+	    android:id="@+id/search_by_traincode"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:inflatedId="@+id/activity_kobe_tickets_fragment_traincode"
+	    android:layout="@layout/activity_kobe_fragment_tickets_traincode"/>
+	<ViewStub
+	    android:id="@+id/search_by_start_last_station"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:inflatedId="@+id/activity_kobe_tickets_fragment_start_last_station"
+	    android:layout="@layout/activity_kobe_fragment_tickets_start_last_station"/>
+	<ViewStub 
+	    android:id="@+id/search_detail_by_traincode"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:inflatedId="@+id/activity_kobe_tickets_fragment_query_station_detail"
+	    android:layout="@layout/activity_kobe_fragment_tickets_query_station_detail"/>
+</LinearLayout>

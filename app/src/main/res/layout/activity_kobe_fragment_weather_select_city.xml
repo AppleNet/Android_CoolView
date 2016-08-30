@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.llc.android_coolview.kobe.view.percentlayout.PercentRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/PercentRelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+	    android:id="@+id/title" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#828282">
+	    <ImageView 
+	        android:id="@+id/back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/kobe_weather_back"
+	        android:layout_alignParentLeft="true"/>
+	    <ImageView 
+	        android:id="@+id/add"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/kobe_weather_add"
+	        android:layout_alignParentRight="true"/>
+	    <ImageView 
+	        android:id="@+id/edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/kobe_weather_edit"
+	        android:layout_toLeftOf="@id/add"
+	        android:layout_marginRight="10dp"/>
+	</RelativeLayout> 
+	
+	<TextView
+	    android:id="@+id/comein" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="@color/white"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/kobe_weather_comein"
+	    android:text="进去空气果"
+	    android:gravity="center"/>
+	
+	<ListView 
+	    android:id="@+id/city_list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/title"
+	    app:layout_heightPercent="100%"
+	    android:divider="@null"/>
+	
+</com.llc.android_coolview.kobe.view.percentlayout.PercentRelativeLayout>

@@ -1,0 +1,159 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.0.0'
+
+    defaultConfig {
+        applicationId "com.llc.android_coolview"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 1
+        versionName "2.0"
+        multiDexEnabled true
+    }
+
+    //签名
+    signingConfigs {
+        myConfig {
+            storeFile file(KEYSTORE_FILE)//签名文件
+            storePassword KEYSTORE_PASSWORD
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD  //签名密码
+        }
+    }
+
+    buildTypes {
+        release {
+            applicationIdSuffix ".release"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.myConfig
+        }
+
+        debug{
+            minifyEnabled false
+            debuggable true
+            signingConfig signingConfigs.myConfig
+        }
+
+        dev{
+            applicationIdSuffix ".dev"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.myConfig
+        }
+
+        //自定义名字不过不能和上面buildType中相同，不然Gradle编译会不通过。在这里使用了『flavors_』前缀以便区分。
+        flavors_release{
+            // manifestPlaceholders中写到的『str』,『package_name』不支持用大写，否则Gradle编译会不通过。
+            // 这里所设置的变量可以直接使用在『AndroidManifest.xml』中，使用方式为：${package_name}
+            // android:label="${package_name}"
+            manifestPlaceholders = [str:"releaseStr",package_name:"com.llc.android_coolview"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string","strKey","releaseStrValue")
+            signingConfig signingConfigs.myConfig
+        }
+
+        flavors_dev{
+            manifestPlaceholders = [str:"devStr",package_name:"com.llc.android_coolview"]
+            resValue("string","strKey","devStrValue")
+            signingConfig signingConfigs.myConfig
+        }
+    }
+    dexOptions{
+        jumboMode=true
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/res']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+        dev.setRoot('build-types/dev')
+        flavors_release.setRoot('build-types/flavors_release')
+        flavors_dev.setRoot('build-types/flavors_dev')
+        // 批量打包--指定配置文件
+        // 不同的渠道商对应的各自AndroidManifest
+        // AndroidManifest的application标签只用配置渠道号的值
+        // 其他公共配置都放在公共的AndroidManifest.xml中
+        xiaomi {
+            manifest.srcFile 'src/main/AndroidManifest1.xml'
+        }
+        qihoo {
+            manifest.srcFile 'src/main/AndroidManifest2.xml'
+        }
+        baidu{
+            manifest.srcFile 'src/main/AndroidManifest3.xml'
+        }
+        googlePaly{
+            manifest.srcFile 'src/main/AndroidManifest4.xml'
+        }
+        wandoujia{
+            manifest.srcFile 'src/main/AndroidManifest5.xml'
+        }
+        instrumentTest.setRoot('tests')
+    }
+
+    //批量打包--声明
+    productFlavors {
+        xiaomi {
+            //这里可以配置不同的包名
+            manifestPlaceholders = [package_name:"com.llc.xiaomi.android_coolview"]
+            applicationId = "com.llc.xiaomi.android_coolview"
+        }
+        qihoo {
+            manifestPlaceholders = [package_name:"com.llc.qihoo.android_coolview"]
+            applicationId = "com.llc.qihoo.android_coolview"
+        }
+        baidu{
+            manifestPlaceholders = [package_name:"com.llc.baidu.android_coolview"]
+            applicationId = "com.llc.baidu.android_coolview"
+        }
+        googlePlay{
+            manifestPlaceholders = [package_name:"com.llc.googleplay.android_coolview"]
+            applicationId = "com.llc.googleplay.android_coolview"
+        }
+        wandoujia{
+            manifestPlaceholders = [package_name:"com.llc.wandoujia.android_coolview"]
+            applicationId = "com.llc.wandoujia.android_coolview"
+        }
+    }
+
+    //在生成的apk文件，修改下命名而已
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile!=null && outputFile.name.endsWith('-unaligned.apk')){
+                output.outputFile.delete()
+            }
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}.apk")
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: './libs')
+    compile 'android:llc-appcompat-v7:1.0.5'
+    compile 'android:llc-acra:1.0.0'
+}

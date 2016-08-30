@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CoolView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="all_image">所有图片</string>
+	<string name="logo_content">Where amazing happens</string>
+	<string name="guide_skip">跳过</string>
+	<string name="download">下载</string>
+	<string name="share">分享</string>
+	<string name="download_message">下载信息</string>
+	<!--  comment是我对这条分享的评论，仅在人人网和QQ空间使用 -->
+	<string name="share_comment">一张精美的图片，分享给大家!</string>
+	<!-- titleUrl是标题的网络链接，仅在人人网和QQ空间使用 -->
+	<string name="share_titleUrl">http://sharesdk.cn</string>
+	<string name="share_text">分享给所有的麦蒂粉丝</string>
+	<!-- url仅在微信（包括好友和朋友圈）中使用 -->
+	<string name="share_url">http://sharesdk.cn</string>
+	<string name="action_done">完成</string>
+	<string name="exit_login">退出登录</string>
+	<string name="the_nba_regular_season_schedule_result">NBA常规赛赛程结果</string>
+	<string name="team_event_query">球队赛程赛事查询</string>
+	<string name="team_competition_schedule_query">球队对战赛赛程查询</string>
+	<string name="nba_vs">VS</string>
+	<string name="input_team_name">请输入球队</string>
+	
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    
+    <!-- ShareSDk -->
+    <string name="share_sdk">Share SDK</string>
+    <string name="login_with_msg">用手机号码登录</string>
+    <string name="login_with_weixin">用微信登录</string>
+    <string name="login_with_sina_weibo">用新浪微博登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="tpl_ok">确定</string>
+    <string name="tpl_cancel">取消</string>
+    
+    <string name="tpl_key_user_icon">头像</string>
+    <string name="tpl_key_user_name">昵称</string>
+    <string name="tpl_key_user_gender">性别</string>
+    <string name="tpl_key_user_note">备注</string>
+
+    <string name="tpl_value_user_name">昵称</string>
+    <string name="tpl_value_user_gender">性别</string>
+    <string name="tpl_value_user_note">请填写备注信息</string>
+    
+    <string name="tpl_sign_user_info">用户信息</string>
+    <string name="tpl_sign_up">注册</string>
+    <string name="tpl_girl">女</string>
+    <string name="tpl_boy">男</string>
+    
+    <string name="tpl_camera">拍照</string>
+    <string name="tpl_picture">从相册获取</string>
+    
+    <string name="tpl_change_user_name_title">更改名字</string>
+    <string name="tpl_change_user_note_title">更改备注</string>
+    <string name="tpl_input_user_name_hint">好名字可以让你的朋友更容易记住你</string>
+    <string name="tpl_input_user_note_hint">自定义备注信息，给你带来更多吸引</string>
+    
+    <string name="tpl_no_sdcard">sdcard 卡不存在</string>
+    <string name="tpl_msg_login_hint">请输入手机号码</string>
+    <string name="tpl_verify_code_hint">请输验证码</string>
+    <string name="tpl_get_verify_code">获取验证码</string>
+    <string name="tpl_send_verify_code">检验验证码</string>
+    <string name="signup_success">注册成功</string>
+    <string name="signup_failed">注册失败</string>
+    
+    <string name="action_feed">意见反馈</string>
+    <string name="action_group_chat">发起群聊</string>
+    <string name="action_add_friend">添加朋友</string>
+    <string name="action_scan">扫一扫</string>
+    <string name="action_search">搜索</string>
+    <string name="action_add">添加</string>
+    
+    <string name="tab_news">新闻</string>
+    <string name="tab_sports">体育</string>
+    <string name="tab_weather">天气</string>
+    <string name="tab_ticket">车票</string>
+    
+    <string name="tencent_new">腾讯新闻</string>
+    <string name="netease_new">网易新闻</string>
+    <string name="sina_new">新浪新闻</string>
+    
+    <string name="tencent_sport">腾讯体育</string>
+    <string name="netease_sport">网易体育</string>
+    <string name="sina_sport">新浪体育</string>
+    
+    <string name="weather_location">定位天气</string>
+    <string name="weather_city">城市天气</string>
+    <string name="weather_city_detail">城市详情</string>
+    
+    <string name="the_train_number_query_this_train_schedule">车次查询本火车时刻表</string>
+    <string name="the_station_and_arrival_station_query_train_schedules">发车站和到达站查询火车时刻表</string>
+    <string name="the_train_number_query_train_through_the_detail_at_the_station">火车车次查询列车经由车站明细</string>
+    <string name="train_code">车次：</string>
+    <string name="input_train_code">请输入要查询的车次</string>
+    <string name="search_traincode">查询</string>
+    <string name="start_station">始发站</string>
+    <string name="last_station">终点站</string>
+    <string name="beijing">北京</string>
+    <string name="zhengdingjichang">正定机场</string>
+    <string name="shijiazhuang">石家庄</string>
+    <string name="input_start_station">请输入始发车站</string>
+    <string name="input_last_station">请输入终点车站</string>
+    <string name="start_date">出发日期</string>
+    <string name="train_detail">选择车型</string>
+    <string name="all_train">高铁,动车/城际</string>
+    <string name="student">学生票查询</string>
+    <string name="input_train_code_detail">请输入要查询明细的车次</string>
+    <string name="icon">图标</string>
+    <string name="input_city_name">请输入要查询的城市</string>
+    <string name="city_name">城市：</string>
+    <string name="search_city_name">查询</string>
+    <string name="tickets_date_hint">09月19日</string>
+    <string name="common_line">常用路线</string>
+    <string name="palne_ticktes">特价机票</string>
+    <string name="hoetl_ticktes">特价酒店</string>
+    
+    <string name="title_hint">北京市朝阳区</string>
+    <string name="date_hint">9月10日</string>
+    <string name="aqi_hint">14 优</string>
+    <string name="tommorrow_aqi_hint">优</string>
+    <string name="temp_hint">22/13°C</string>
+    <string name="temp_weather">多云转晴</string>
+    <string name="update_date_hint">今天14:30发布</string>
+    <string name="today">今天</string>
+    <string name="tommorrow">明天</string>
+    <string name="aftertoday">后天</string>
+    <string name="high_speed_rail">高铁</string>
+    <string name="motor_car">动车/城际</string>
+    <string name="non_stop">Z直达</string>
+    <string name="express_train">T特快</string>
+    <string name="quick_train">K快速</string>
+    <string name="other">其他</string>
+    <string name="all">全部</string>
+    <string name="sunday">日</string>
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="thursday">四</string>
+    <string name="label_year">label年</string>
+    <string name="label_month">label月</string>
+    <string name="select_date">选择日期</string>
+    <string name="time_zero">00:00</string>
+    <string name="time_six">06:00</string>
+    <string name="time_twelve">12:00</string>
+    <string name="time_eighteen">18:00</string>
+    <string name="time_twenty_four">24:00</string>
+    <string name="time_by_train">乘车时间段:</string>
+    <string name="time_line">--</string>
+    <string name="search_hint">输入站点首字母、拼音或名称</string>
+    <string name="search_recent">最近查询</string>
+    <string name="search_hot_city">热门城市</string>
+    <string name="time_all">00:00&#8212;&#8212;24:00</string>
+    <string name="title_common_line">————————	常用路线	—————————</string>
+    <string name="business_seat">商务座:无</string>
+    <string name="special_seat">特等座:无</string>
+    <string name="first_seat">一等座:无</string>
+    <string name="second_seat">二等座:无</string>
+    
+    <string name="new_content_title">科索沃议会发生骚乱 反对派释放催泪弹</string>
+    <string name="new_content_center">刘云山在朝鲜平壤会见金正恩</string>
+    
+    <string name="scan_qrcode">将二维码放入框内，即可自动扫描</string>
+    <string name="scan_onecode">将条形码放入框内，即可自动扫描</string>
+    <string name="scan_worde">将单词放入框内，即可自动扫描</string>
+    <string name="scan_qr">二维码</string>
+    <string name="scan_one">条形码</string>
+    <string name="scan_word">单词</string>
+    <string name="scan_help">帮助</string>
+    <string name="scan_scan">扫一扫</string>
+    <string name="scan_result">扫描结果</string>
+    <string name="scan_content">扫描内容</string>
+    <string name="scan_back">返回</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_ok">确定</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机可能被占用，您可能需要重启设备。</string>
+    <string name="msg_default_format">格式</string>
+    <string name="msg_default_meta">元数据</string>
+    <string name="msg_default_time">时间</string>
+    <string name="msg_default_type">类型</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="go">出发</string>
+    <string name="book">图刊：</string>
+    <string name="network_error">网络不给力！</string>
+    <string name="network_error_no_ticktes">网络不给力！余票没查到！</string>
+    <string name="gentie">跟帖</string>
+    <string name="business">商务座:</string>
+    <string name="special">特等座:</string>
+    <string name="first">一等座:</string>
+    <string name="second">二等座:</string>
+    <string name="rw">软卧:</string>
+    <string name="yw">硬卧:</string>
+    <string name="yz">硬座:</string>
+    <string name="wz">无座:</string>
+    <string name="rw_seat">软卧:</string>
+    <string name="yw_seat">硬卧:</string>
+    <string name="yz_seat">硬座:</string>
+    <string name="wz_seat">无座:</string>
+    <string name="is_searching">正在查询，请稍候...</string>
+
+    <string name="sf">始发站：</string>
+    <string name="zdz">终点站：</string>
+    <string name="sfsj">始发时间：</string>
+    <string name="zdsj">终到时间：</string>
+    <string name="ksz">开始站：</string>
+    <string name="ddz">到达站：</string>
+    <string name="gl">公里：</string>
+    <string name="sc">时长：</string>
+</resources>

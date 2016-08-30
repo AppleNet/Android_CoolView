@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="llc-mainlibs-1.0.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-SinaWeibo-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Core-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Email-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Renren-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Wechat-Moments-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/MobTools.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-QZone-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Douban-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-ShortMessage-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Wechat-Core-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Yixin-Moments-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-QQ-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-KaiXin-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Yixin-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Wechat-Favorite-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Wechat-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-TencentWeibo-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-YouDao-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-mainlibs/1.0.4/jars/libs/ShareSDK-Yixin-Core-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

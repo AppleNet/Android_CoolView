@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+        
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        
+        <!-- toolbar（actionbar）颜色  在这里设置 会应用整个应用程序，当向下滑动，会有一个波浪阴影，那个颜色也应用这个颜色值，所以设置的不好，目前没发现怎样通过代码设置colorPrimary它的值-->
+        <!-- <item name="colorPrimary">@color/toolbar_background</item> -->
+        
+        <!-- 状态栏颜色  在这里设置 会应用整个应用程序 不过可以通过getWindow.setStatusBarColor()来动态设置这个值。-->
+        <!-- <item name="colorPrimaryDark">@color/toolbar_title_background</item> -->
+        
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+       
+        <!-- 修改menu菜单的字体颜色 -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- 修改menu和返回键的颜色 -->
+        <item name="android:textColorSecondary">@android:color/black</item>
+        
+        <!-- SearchView -->
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <!-- AutoCompleteTextView -->
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView</item>
+        
+        <!-- popupTheme -->
+        <item name="popupTheme">@style/popupTheme</item>
+        <!-- popupMenuStyle -->
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background</item>
+        <item name="selectableItemBackground">@drawable/selectable_background</item>
+        
+    </style>
+    
+    <!-- SearchView -->
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">  
+    	<item name="queryBackground">@android:color/transparent</item>
+    </style> 
+    
+    <!-- AutoCompleteTextView -->
+    <style name="AutoCompleteTextView" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+    
+    <!-- popupMenuStyle -->
+    <style name="popupMenuStyle" parent="Base.Widget.AppCompat.PopupMenu.Overflow">
+    </style>
+    
+    <!-- popupTheme -->
+    <style name="popupTheme" parent="AppBaseTheme.Dark">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    <!-- AppBaseTheme.Dark -->
+    <style name="AppBaseTheme.Dark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:textColorSecondary">@color/text_second_color_primary</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView</item>
+        <item name="popupTheme">@style/popupTheme</item>
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background</item>
+        <item name="selectableItemBackground">@drawable/selectable_background</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="llc-appcompat-v7-1.0.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/jars/libs/android-support-v7-appcompat.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/jars/libs/android-support-v7-palette.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/jars/libs/android-support-v7-gridlayout.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/jars/libs/android-support-v7-recyclerview.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/jars/libs/android-support-v7-appcompatedittext.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/jars/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android/llc-appcompat-v7/1.0.5/jars/libs/android-support-v7-mediarouter.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
